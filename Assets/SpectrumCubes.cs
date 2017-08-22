@@ -29,7 +29,7 @@ public class SpectrumCubes : MonoBehaviour {
         CalculateBands();
         ProcessBands();
         ScaleCubes();
-	}
+    }  
 
     void CalculateBands()
     {
@@ -76,7 +76,8 @@ public class SpectrumCubes : MonoBehaviour {
         for (int i = 0; i < cubes.Length; i++)
         {
             Vector3 scale = cubes[i].localScale;
-            cubes[i].localScale = new Vector3(scale.x, bandBuffer[i], scale.z);
+            //cubes[i].localScale = new Vector3(scale.x, bandBuffer[i], scale.z);
+            cubes[i].localScale = new Vector3(scale.x, scale.y, bandBuffer[i]);
         }
     }
 }

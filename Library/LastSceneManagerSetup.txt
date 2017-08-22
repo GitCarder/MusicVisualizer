@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Second Project/main.unity
+- path: Assets/Second Project/av1.unity
   isLoaded: 1
   isActive: 1
